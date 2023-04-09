@@ -1,0 +1,160 @@
+/* Завдання 1 */
+:root {
+  background: white;
+}
+/* Завдання 2 */
+* {
+  color: black;
+}
+/* Завдання 3 */
+h1 {
+  background: blue;
+}
+/* Завдання 4 */
+.green {
+  color: green;
+}
+/* Завдання 5 */
+#blue {
+  color: blue;
+}
+/* Завдання 6 */
+div.box {
+  background: green;
+}
+section div .box p {
+  background: red;
+}
+/* Завдання 7 */
+.green {
+  background: green;
+  color: white;
+}
+/* Завдання 8 */
+ul > li {
+  background: red;
+}
+
+/* Завдання 9 */
+button.header-button + span {
+  background: red;
+}
+/* Завдання 10 */
+p.susid {
+  background: blue;
+  color: white;
+}
+p.susid ~ p {
+  background: blue;
+  color: white;
+}
+/* Завдання 11 */
+.salo,
+#bread {
+  background: yellow;
+}
+/* УРОК 2 */
+/* Завдання 1 */
+.first-task li:first-child {
+  color: white;
+}
+/* Завдання 2 */
+.second-task ul:first-child > li:first-child {
+  color: yellow;
+}
+/* Завдання 3 */
+.third-task ul:last-child > li:first-child {
+  color: yellow;
+}
+/* Завдання 4 */
+.four-task li:last-child {
+  color: yellow;
+}
+/* Завдання 5 */
+.five-task ul:last-child > li:last-child {
+  color: white;
+}
+/* Завдання 6 */
+section div:only-child {
+  color: red;
+}
+/* Завдання 7 */
+.seven-task :first-of-type {
+  background: red;
+}
+/* Завдання 8 */
+.eight-task :last-of-type {
+  background: red;
+}
+/* Завдання 9 */
+p:only-of-type {
+  background: yellow;
+}
+/* УРОК 3 */
+/* Завдання 1 */
+.lesson-three-task-one a[href] {
+  color: white;
+}
+/* Завдання 2 */
+.lesson-three-task-two li[value] {
+  color: yellow;
+}
+/* Завдання 3 */
+.lesson-three-task-three li[value='3'] {
+  background: red;
+}
+/* Завдання 4 */
+.lesson-three-task-four button[class~='primary'] {
+  background: blue;
+}
+/* Завдання 5 */
+.lesson-three-task-five button[class|='secondary'] {
+  background: blue;
+}
+/* Завдання 6 */
+.lesson-three-task-six li[class^='b'] {
+  background: white;
+  color: green;
+}
+/* Завдання 7 */
+.lesson-three-task-seven li[class*='on'] {
+  background: white;
+  color: green;
+}
+/* Завдання 8 */
+.lesson-three-task-eight ul li {
+  background: none;
+}
+.lesson-three-task-eight ul li span[class$='s'] {
+  background: red;
+}
+/* Завдання 9 */
+.lesson-three-task-nine h2,
+h3 {
+  color: black;
+}
+.lesson-three-task-nine ::first-letter {
+  color: red;
+}
+/* Завдання 10 */
+.lesson-three-task-ten p::first-line {
+  background: yellow;
+}
+/* Завдання 11 */
+.lesson-three-task-eleven input::placeholder {
+  background: red;
+}
+/* Завдання 12 */
+.lesson-three-task-twelve li {
+  background: none;
+}
+.lesson-three-task-twelve li::before {
+  content: '--> ';
+}
+/* Завдання 12 */
+.lesson-three-task-thirteen li {
+  background: none;
+}
+.lesson-three-task-thirteen li::after {
+  content: ' <--';
+}
