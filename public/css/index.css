@@ -42,10 +42,10 @@ button.header-button + span {
 }
 /* Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор
  */
-p.susid {
+/* p.susid {
   background: blue;
   color: white;
-}
+} */
 p.susid ~ p {
   background: blue;
   color: white;
