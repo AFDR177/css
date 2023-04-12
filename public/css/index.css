@@ -1,1 +1,124 @@
+/* <!--   Урок 4  -->
+  <!-- Завдання №1. Змініть колір тексту на червоний та фон на жовтий, коли користувач наведе курсор миші на кнопку  -->
+  <!--  Використовуйте цей селектор :hover--> */
+.lesson-four-task-one:hover {
+  color: red;
+  background-color: yellow;
+}
 
+/* Завдання №2. Змініть фон заголовка на зелений, коли користувач наведе курсор миші на посилання: */
+.link:hover ~ .title {
+  background-color: green;
+}
+
+/* Завдання №3. Змініть колір тексту та фон відвіданого посилання на жовтий: 
+      Порада проходити це завдання на https://codepen.io/ ,адже через те,
+          що браузер запам'ятовує посилання на які ви заходили вам потрібно буде скидати кеш постійно,
+          тому легше всього пройти тут -->
+   Використовуйте цей селектор :visited */
+
+a[href='#lesson-four-task-three']:visited {
+  color: yellow;
+  background-color: rgb(230, 230, 189);
+}
+
+/* Завдання №4. Змініть колір тексту та фон посилання,
+    яке знаходиться в блоку з ідентифікатором "sidebar", на червоний: */
+a[href='#sidebar']:link {
+  color: red;
+  background-color: rgb(228, 166, 166);
+}
+
+/* Завдання №5. Змініть колір тексту та фон кнопки, коли користувач натискає на неї, на червоний: --> */
+div[class$='five']:active {
+  color: red;
+  background: rgb(227, 144, 144);
+}
+/* Завдання №6. Змініть колір тексту та фон кнопки, коли вона отримує фокус, на помаранчевий: */
+div[class$='six'] :focus {
+  color: orange;
+  background-color: rgb(248, 207, 131);
+}
+/* Завдання №7. Змініть колір тексту та фон елемента,
+  який вказаний в URL як фрагмент, на зелений, коли на нього встановлюється :target: */
+#target:target {
+  color: green;
+  background-color: greenyellow;
+}
+/* Завдання №8. Змініть колір тексту на білий та фон елемента на синій при натискані відповідного чекбоксу: */
+input[type='checkbox']:checked ~ #target {
+  background-color: blue;
+  color: white;
+}
+/* Завдання №9. Змінити колір тексту на синій для усіх елементів на сторінці, які написані українською мовою. */
+div[class$='nine'] > p:lang(uk) {
+  color: blue;
+}
+/* Завдання №10. Змінити колір тексту на червоний та фон на жовтий елементів форми, які включені та доступні для введення. */
+div[class$='ten'] input:enabled {
+  color: red;
+  background-color: yellow;
+}
+/* Завдання №11. При використанні селектора :disabled змінити фоновий колір на жовтий в полях введення, які є неактивними. */
+div[class$='eleven'] input:disabled {
+  background-color: yellow;
+}
+/* Завдання №12. Встановіть жовтий фоновий колір для елементів <input>, що без атрибута readonly. */
+div[class$='twelve'] input:read-write {
+  background-color: yellow;
+}
+/* Завдання №13. Встановіть жовтий фоновий колір для інпуту з атрибутом readonly.
+  Змініть колір тексту на червоний, а фоновий колір на блідо-жовтий. */
+div[class$='thirteen'] input:read-only {
+  color: red;
+  background-color: yellow;
+}
+div[class$='thirteen'] input:read-write {
+  color: red;
+  background-color: rgba(255, 255, 0, 0.115);
+}
+/* Завдання №14. Зробіть поле вводу зеленим, коли введене значення коректне, і червоним - якщо ні. */
+div[class$='fourteen'] input:valid {
+  color: green;
+}
+div[class$='fourteen'] input:invalid {
+  color: red;
+}
+/* Завдання №15. Застосувати селектор :optional до текстового поля форми,
+  яке не є обов'язковим для заповнення, і змінити його фон на червоний, */
+div[class$='fifteen'] textarea:optional {
+  background-color: red;
+}
+/* Завдання №16. Є форма з полем вводу числа, яке може бути від 0 до 100.
+  Задача змінити колір фону на червоний, якщо значення не входить до цього діапазону */
+div[class$='sixteen'] input:out-of-range {
+  background-color: red;
+}
+/* Завдання 17. Є форма з полем вводу числа, яке може бути від 0 до 100.
+ Задача змінити колір фону на червоний, якщо значення входять до діапазону від 0 до 100. */
+div[class$='seventeen'] input:in-range {
+  background-color: red;
+}
+/* Завдання №18.У цьому завданні потрібно зробити, щоб змінювався колір фону placeholder на червоний ,
+  який зникає, коли користувач починає вводити */
+div[class$='eighteen'] input:placeholder-shown {
+  background-color: red;
+}
+/* Завдання №19. Застосуйте селектор :focus-within до блоку,
+  який змінює колір тексту на білий та фоновий колір на жовтий при активному стані */
+div[class$='nineteen']:focus-within button {
+  background-color: yellow;
+  color: white;
+}
+/* Завдання №20. При валідації форми з помилкою, змінюйте колір фону на червоний. */
+div[class$='twenty'] input:invalid {
+  background-color: red;
+}
+/* Завдання №21.Зробити текст червоного кольору для мітки (label),
+  яка має встановлене значення за замовчуванням (checked) для елементу input з типом радіо (radio)
+  у розділі з класом lesson-four-task-twenty-one. */
+.lesson-four-task-twenty-one
+  input[type='radio']:checked:default
+  + label {
+  color: red;
+}
